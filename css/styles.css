@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.userCard {
+    --head-color: #554f70;
+    --content-color: lightgray;
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    font-family: sans-serif;
+    border: 1px solid var(--content-color);
+}
+
+.userCard header {
+    background: var(--head-color);
+    height: 100px;
+    width: 100%;
+}
