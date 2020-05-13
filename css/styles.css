@@ -50,6 +50,25 @@
     font-size: 14px;
 }
 
-.userCard main {
+.userCard main, .userCard footer {
     background: var(--background-color);
+}
+.userCard footer {
+    display: flex;
+    justify-content: space-between;
+}
+.userCard footer>div{
+    width: 50%;
+    border-top: 2px solid var(--border-color);
+    text-align: center;
+}
+.userCard footer>div>img {
+    height: 25px;
+    margin: 0.3em 0;
+}
+.userCard footer>div:nth-child(1) {
+    border-right: 1px solid var(--border-color);
+}
+.userCard footer>div:nth-child(2) {
+    border-left: 1px solid var(--border-color);
 }
