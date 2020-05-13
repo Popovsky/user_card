@@ -6,16 +6,50 @@
 
 .userCard {
     --head-color: #554f70;
-    --content-color: lightgray;
+    --border-color: lightgray;
+    --background-color: #f2f2f2;
     width: 250px;
     border-radius: 15px;
     overflow: hidden;
     font-family: sans-serif;
-    border: 1px solid var(--content-color);
+    border: 1px solid var(--border-color);
 }
 
 .userCard header {
     background: var(--head-color);
     height: 100px;
     width: 100%;
+}
+
+.userCard main {
+    text-align: center;
+    padding: 0 1em;
+}
+.userCard main img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+    margin-top: -75px;
+}
+.userCard main .userName {
+    color: var(--head-color);
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.userCard main .userPost {
+    color: var(--head-color);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.userCard main p {
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.userCard main {
+    background: var(--background-color);
 }
